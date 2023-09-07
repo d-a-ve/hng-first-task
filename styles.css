@@ -1,0 +1,111 @@
+:root {
+  --step--1: clamp(0.83rem, calc(0.81rem + 0.12vw), 0.90rem);
+  --step-0: clamp(1.00rem, calc(0.96rem + 0.22vw), 1.13rem);
+  --step-1: clamp(1.20rem, calc(1.13rem + 0.36vw), 1.41rem);
+  --step-2: clamp(1.44rem, calc(1.33rem + 0.55vw), 1.76rem);
+  --step-3: clamp(1.73rem, calc(1.56rem + 0.82vw), 2.20rem);
+  --step-4: clamp(2.07rem, calc(1.84rem + 1.17vw), 2.75rem);
+  --step-5: clamp(2.49rem, calc(2.16rem + 1.64vw), 3.43rem);  
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: var(--step-0);
+  background-image: linear-gradient(
+  35deg,
+  hsl(240deg 100% 20%) 0%,
+  hsl(270deg 100% 22%) 21%,
+  hsl(286deg 100% 24%) 40%,
+  hsl(298deg 100% 26%) 57%,
+  hsl(308deg 100% 32%) 73%,
+  hsl(315deg 100% 38%) 86%,
+  hsl(321deg 100% 44%) 95%,
+  hsl(325deg 100% 50%) 100%
+);
+color: #f1e0e0;
+padding-bottom: 3rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+  display: inline-block;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+body {
+  font-size: var(--step-1);
+}
+
+h1 {
+  font-size: var(--step-5);
+}
+
+.task-header__profile-img {
+ margin-bottom: 0.5rem;
+ border-radius: 26% 74% 67% 33% / 43% 22% 78% 57% ;
+ overflow: hidden;
+}
+
+.task-header__profile-heading {
+  margin-bottom: 0.5rem;
+}
+
+.task-body {
+  padding-top: 1rem;
+}
+
+.task-body__details {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.task-body__details-data {
+  font-size: var(--step-1);
+  margin-top: 0.5rem;
+}
+
+.task-body__details img {
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  bottom: -5px;
+}
+
+.github-btn-wrapper {
+  margin-top: 2rem;
+}
+
+.github-btn {
+  border: 1px solid #eee;
+  color: #eee;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  transition: transform 300ms ease;
+}
+
+.github-btn:hover {
+  transform: translateY(-5px);
+}

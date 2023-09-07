@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HNG X Zuri First Task</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <div class="task-header">
+      <div class="task-header__profile-img">
+        <img src="./assets/profile.jpg" alt="DaimaouDave" data-testid="slackDisplayImage" />
+      </div>
+      <h1 class="task-header__profile-heading" data-testid="slackUserName">DaimaouDave</h1>
+    </div>
+    <div class="task-body">
+      <div class="task-body__details">
+        <p class="task-body__details-heading">The current day of the week is:</p>
+        <p class="task-body__details-data" id="currentDayOfTheWeek" data-testid="currentDayOfTheWeek">
+        </p>
+        <img src="./assets/path.svg" alt=""/>
+      </div>
+      <div class="task-body__details">
+        <p  class="task-body__details-heading">The UTC time in milliseconds is:</p>
+        <p class="task-body__details-data" id="currentUTCTime" data-testid="currentUTCTime"></p>
+        <img src="./assets/path.svg" alt=""/>
+      </div>
+      <div class="task-body__details">
+        <p class="task-body__details-heading">My track is:</p>
+        <p class="task-body__details-data" data-testid="myTrack">Frontend Development</p>
+        <img src="./assets/path.svg" alt=""/>
+      </div>
+      <div class="github-btn-wrapper">
+        <a href="https://github.com/d-a-ve/hng-first-task" target="_blank" class="github-btn" data-testid="githubURL">View source code on github</a>
+      </div>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
